@@ -406,7 +406,7 @@ margin-top:87px;
 }
 .navbar-inverse .navbar-nav>li>a 
 {
-    color: #D259A1 !important;
+    color: white;
     font-weight: bold !important;
     font-size: 18px !important;
 }
@@ -462,10 +462,10 @@ margin-top:87px;
 {
 	background-color: rgba(224, 138, 189, 0.57) !important;
 }
-.bannerImageStyle
+.sldImageStyle
 {
 	width: 1550px !important;
-    height: 350px !important;
+    height: 400px !important;
 }
 .jobImageStyle
 {
@@ -667,4 +667,304 @@ body {
 
 .table tfoot {
   font-weight: bold;
+}
+#imagestyle {
+    width: 103px;
+    height: 60px;
+}
+#marg
+{
+margin-top:220px;
+}
+#margn
+{
+margin-top:-22px;
+margin-right:59px;
+}
+
+#fit
+{
+width:50px;
+height:60px;
+font-size:large;
+}
+.bg
+{
+background-image:url('flower.jpg');
+background-size:1332px;
+
+}
+.labelstyle
+{
+width:31px;
+height:30px;
+margin-left:23px;
+}
+.clear
+{clear:both;
+}
+.spaces20
+{margin-top:20px;
+}
+.sliderimage
+{
+width:1326px !important; 
+height:406px !important;
+}
+
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+ .social {
+     -webkit-transform: scale(0.8);
+     /* Browser Variations: */
+     
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
+ }
+
+/*
+    Multicoloured Hover Variations
+*/
+ 
+/* #social-fb:hover {
+     color: #3B5998;
+ }
+ #social-tw:hover {
+     color: #4099FF;
+ }
+ #social-gp:hover {
+     color: #d34836;
+ }
+ #social-em:hover {
+     color: #f39c12;
+ }
+*/
+
+
+.watchListImage {
+    width: 247px;
+    height: 213px;
+}
+
+.collectionStyle {
+    margin-top: 24px !important;
+    margin-bottom: 42px !important;
+    fontsize:36px;
+}
+/*.footermargin {
+    margin: 1000px -141px;
+    background: #0b0d10;
+}*/
+.thead-inverse th {
+    color: #fff !important;
+    background-color: #292b2c !important;
+}
+.productimage
+{
+	height: 376px;
+    width: 501px;
+}
+#ruppee
+{
+	font-size:x-large;
+}
+#productimgMT
+{
+	margin-top: 107px;
+}
+.productname
+{
+	font-size: x-large;
+}
+.productdes
+{
+	font-style: italic;
+    font-size: medium;
+    color: #920909;
+}
+.stckclr
+{
+    color: green;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #5d6369 !important;
+   
+    border-color: #010e1b !important;
+}
+.btn-cntu
+{
+	
+   color: #101010 !important;
+    background-color: rgb(175, 168, 168) !important;
+    border-color: #151414 !important;
+}
+.btn-plc
+{
+	    color: rgba(23, 1, 1, 0.97) !important;
+    background-color: rgb(175, 168, 168) !important;
+    border-color: #151414 !important;
+}
+
+option:hover
+{
+	background-color:red !important;
+}
+/* footer styles*/
+
+.footer {
+  position: absolute;
+  bottom: -270px;
+  width: 100%;
+  height: 150px;
+  background-color: #111;
+  text-align: center;
+}
+
+.container{
+  margin-top: 50px;
+  
+  width: 100%;
+}
+
+.fa-twitter {
+    color: #4099FF;
+}
+
+.fa-facebook {
+    color: #3B5998;
+}
+
+.fa-youtube-play {
+    color: #e52d27;
+}
+
+.fa-rss {
+    color: #FF6600;
+}
+
+.fa-vine {
+    color: #00a478;
+}
+
+.fa-flickr {
+    color: #ff0084;
+}
+
+.fa-twitch {
+    color: #6441A5;
+}
+
+.fa-linkedin {
+    color: #007bb6;
+}
+
+.fa {
+    opacity: 0.7;
+    transition: 1s;
+    -webkit-transition: 1s;
+}
+
+.fa:hover{
+    opacity: 1;
+    transition: 1s;
+    -webkit-transition: 1s;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 250px;
+}
+
+
+.error
+{
+	color: #CA0101 !important;
+}
+
+.titlemargin
+{
+	margin-left:350px;
+}
+
+#thead-inversestyle
+{
+font-variant-caps: all-petite-caps;
+ font-family: initial;
+}
+#table-sm table-inversestyle
+{
+width:849px; 
+height:259px; 
+overflow:auto;
+}
+#pencilstyle
+{
+	color:black;
+}
+#table-inverseproduct
+{
+width:850px; height:341px; overflow:auto;
+}
+<!-- acknowledgement -->
+.thankyou
+{
+	width: 679px !important;
+	height: 531px !important;
+}
+<!-- add categorybsupplier product -->
+.addtop
+{
+margin-top:87px;
+}
+.addstyle
+{
+	margin-left: 147px;
+}
+
+<!-- cart -->
+.cartleft
+{
+	margin-left:363px;
+}
+#cartimage
+{
+	height: 50px;
+}
+.carttable
+{
+	width:849px; height:350px; overflow:auto;
+}
+.cartproductimg
+{
+	height:40px;width:40px;
+}
+#placeorder
+{
+	font-family: -webkit-pictograph;    margin-top: -119px; !important;
+}
+#continueshop
+{
+	margin-left: 80px;font-family: -webkit-pictograph;    margin-top: -119px !important;
+}
+#count-mycart
+{
+	position: absolute;
+    color: gold;
+    background-color: black;
+}
+.checked {
+    color: orange;
+}
+#imgpic {
+  border-radius: 50%;
 }

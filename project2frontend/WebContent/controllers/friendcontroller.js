@@ -13,9 +13,9 @@ app.controller('FriendController', function($scope, $location, FriendService,$ro
 				})
 	}
 	function getSuggestedUsers() {
-		FriendService.getSuggestedUsers().then(function(response) {
+		FriendService.suggestedusers().then(function(response) {
 			$scope.suggestedusers = response.data
-			// getMutualFriends($scope.suggestedusers)
+			
 		}, function(response) {
 			if (response.status == 401)
 				$location.path = "/login"
@@ -32,7 +32,7 @@ app.controller('FriendController', function($scope, $location, FriendService,$ro
 		})
 	}
 
-	function getListOfFriends() {
+	function getListofFriends() {
 		FriendService.getListOfFriends().then(function(response) {
 			$scope.friends = response.data
 		}, function(response) {
@@ -52,21 +52,9 @@ app.controller('FriendController', function($scope, $location, FriendService,$ro
 				console.log(response.status)
 		})
 	}
-	$scope.getuserdetails=function(fromId){
-		$scope.showDetails=true
-		FriendService.getuserdetails(fromId).then(function(response){
-			$scope.details=response.data
-		},function(response){
-			if(response.status==401){
-				$scope.error=response.data
-				$location.path('/login')
-			}
-		
-		})
-	}
 
-	getSuggestedUsers();
-	getAllPendingRequests();
-	getListOfFriends();
+	getSuggestedUsers()
+	getAllPendingRequests()
+	getListofFriends()
 
 })

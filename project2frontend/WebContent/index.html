@@ -44,43 +44,65 @@
 
 <body ng-app="app">
 <header>
-            <nav class="navbar navbar-default">
-            
-           <div class="container-fluid">
-		<button type="button" class="navbar-toggle collapsed" 
-   data-toggle="collapse" data-target="#collapse-example" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="/"><img src="resources/images/1.jpg" width="30" height="30"></a>
-                </div>
-<div class="collapse navbar-collapse" id="collapse-example">
+           <nav id="navbar-red" class="navbar navbar-inverse navbar-static-top" role="navigation">
+
+<div class="continer">
+<ul class="nav navbar-nav" >
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"data-target="bs-example-nav">
+
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</ul>
+</div> 
+               <div class="navbar-header" id="bs-example-nav" style="width:100%;">
+<table border='0' width='100%' cellpadding='0' cellspacing='0' bordercolor='#000000'>  
+							<tr>				
+								<td valign="top" ><a href="#/home">
+									<img src="resources/images/lg1.png" id="imagestyle" alt="logo" />
+								</a></td>  
+								<td>
                 <ul class="nav navbar-nav ">
                 <!-- ng-show="true" if currentUser.username is not undefined -->
                 <!--  if currentUser.username is undefined,ng-show="false" -->
-                <li><a href="" ng-show="currentUser.username">Welcome {{currentUser.username}}</a></li>
-                <li><a href="#/editprofile" ng-show="currentUser.username">Edit User Profile</a></li>
+                <li><a style="color:white;font-size:large" href="" ng-show="currentUser.username">Welcome {{currentUser.username}}</a></li>
+                <li><a style="color:white;font-size:large" href="#/editprofile" ng-show="currentUser.username"> PROFILE</a></li>
                 
-                 <li class="dropdown"><a href="" class="dropdown-toggle"
-						data-toggle="dropdown" ng-show="currentUser.username"> Job <b
+                 <li class="dropdown"><a style="color:white;font-size:large" href="" class="dropdown-toggle"
+						data-toggle="dropdown" ng-show="currentUser.username"> JOBS <b
 							class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="#/addjob" ng-show="currentUser.role=='ADMIN'">Add Job</a></li>
 							<li><a href="#/alljobs" >Get All jobs</a></li>
 						</ul></li>
 						
-						<li class="dropdown"><a href="" class="dropdown-toggle"
-						data-toggle="dropdown" ng-show="currentUser.username"> Blog <b
+						<li class="dropdown"><a style="color:white;font-size:large" href="" class="dropdown-toggle"
+						data-toggle="dropdown" ng-show="currentUser.username"> BLOGS <b
 							class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="#/addblog">Add Blog Post</a></li>
 							<li><a href="#/getblogs" >Get All blogs</a></li>
 						</ul></li>
 
-<li class="dropdown">
+
+       
+       <li class="dropdown"><a style="color:white;font-size:large" href="" class="dropdown-toggle"
+       data-toggle="dropdown" ng-show="currentUser.username"> FRIENDS <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#/suggestedusers">Suggested Users</a></li>
+          <li><a href="#/pendingrequests">Pending Requests</a></li>
+          <li><a href="#/getfriends">Friends</a></li>
+        </ul></li>
+       
+       
+       <li><a style="color:white;font-size:large" href="#/chat" ng-show="currentUser.username">CHAT </a></li>         
+               
+               
+         <li><a style="color:white;font-size:large" href="" ng-show="currentUser.username" ng-click="logout()"><span class="glyphicon glyphicon-log-out"></span>&nbsp;LOG OUT</a></li>
+         
+         <li class="dropdown">
 <a href="" class="dropdown-toggle" data-toggle="dropdown" ng-show="currentUser.username">
 <span class="glyphicon glyphicon-globe" ng-click="updateLength()">
 <span class="rw-number-notification" ng-if="notificationNotViewedLength>0">{{notificationNotViewedLength}}</span></span></a>
@@ -98,7 +120,7 @@
 						
  <li><a href="#/uploadpic" ng-show="currentUser.username">
  <img src="http://localhost:8081/project2middleware/getimage/{{currentUser.username}}" 
- alt="Profile Pic" height="40" width="40"></a></li>              
+id="imgpic" alt="Profile Pic" height="40" width="40"></a></li>              
      
      
       <li class="dropdown" title="new job notification">
@@ -112,32 +134,36 @@
       
       </ul>
       </li>
-       
-       <li class="dropdown"><a href="" class="dropdown-toggle"
-       data-toggle="dropdown" ng-show="currentUser.username"> Friend <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#/suggestedusers">Suggested Users</a></li>
-          <li><a href="#/pendingrequests">Pending Requests</a></li>
-          <li><a href="#/getfriends">Friends</a></li>
-        </ul></li>
-       
-       
-       <li><a href="#/chat" ng-show="currentUser.username">Chat </a></li>         
-               
-               
-                <li><a href="" ng-show="currentUser.username" ng-click="logout()">logout</a></li>
-<li><a href="#/register" ng-hide="currentUser.username">Sign Up</a></li>
-<li><a href="#/login" ng-hide="currentUser.username">Sign In</a></li>
+             
+<li><a style="color:white;font-size:large" href="#/register" ng-hide="currentUser.username">SIGN UP</a></li>
+<li><a style="color:white;font-size:large" href="#/login" ng-hide="currentUser.username">SIGN IN</a></li>
+
+
 
 </ul>
+</td>
+</tr>
+</table>
 </div>
-</div></nav>
+</nav>
 </header>
-<div ng-view>
-
+<div ng-view id="basicViewStyle">
 </div>
+
+<footer>
+	 <div class="footer">
+      <div class="container">
+                            <a href="https://www.instagram.com"><i class="fa fa-instagram fa-3x fa-fw"></i></a>
+              
+              <a href="https://www.facebook.com"><i class="fa fa-facebook fa-3x fa-fw"></i></a>
+              <a href="https://twitter.com"><i class="fa fa-twitter fa-3x fa-fw"></i></a>
+              <a href="https://www.youtube.com"><i class="fa fa-youtube-play fa-3x fa-fw"></i></a>
+              <a href="https://www.flickr.com"><i class="fa fa-flickr fa-3x fa-fw"></i></a>
+              <a href="https://www.linkedin.com"><i class="fa fa-linkedin fa-3x fa-fw"></i></a>
+            
+      </div>
+    </div>
+
+</footer>
 </body>
-
-
-
 </html>
